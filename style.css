@@ -115,6 +115,7 @@ button:hover{
     display: block;
     transition: transform 0.7s;
     justify-content: center;
+    object-fit: cover;
 }
 @keyframes slideleft {
     0% {
