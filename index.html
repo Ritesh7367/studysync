@@ -14,7 +14,7 @@
     <header class="header">
         <div class="heading">
             
-            <a href="main.html">
+            <a href="index.html">
              <span class="material-symbols-outlined">
              keyboard_command_key
              </span>
@@ -22,15 +22,16 @@
             </a>
         </div>
         <nav class="nav">
-            <a href="main.html">Home</a>
-            <a href="#">Features</a>
+            <a href="index.html">Home</a>
+            <a href="#feature">Features</a>
             <a href="#">pricing</a>
-            <a href="#">Blog</a>
-            <a href="#">About</a>
+            <a href="blog.html">Blog</a>
+            <a href="#fixed">About</a>
         </nav>
         <div class="contact-menu">
-            <button class="contact">Contact Us</button>
+            <button class="contact" onclick="window.location.href='mailto:riteshssc452@gmail.com'">Contact Us</button>
         </div>
+        <button id="mode"><i class="fa-solid fa-toggle-off"></i></button>
         <button type="button" class="menu-icon">
             <i class="fas fa-bars"></i>
         </button>
@@ -48,10 +49,35 @@
                 </div>
             </div> 
             <div class="image">
-                <img id="study-image" src="https://res.cloudinary.com/db59t7kna/image/upload/v1773252367/Untitled_design_1_vipfwz.gif" alt="study">
+                <img id="study-image" src="https://i.pinimg.com/736x/8f/d3/f6/8fd3f6836d4705154072450b4dc48c51.jpg" alt="study">
             </div>
         </section>
-      </div>  
+      </div>
+        <div class="signup" id="signup">
+        <div class="signup-container">
+            <h2>Create Account</h2>
+            <form action="signup_process.php" method="POST">
+             <input type="text" name="username" placeholder="Username" required>
+             <input type="email" name="email" placeholder="Email" required>
+             <input type="password" name="password" placeholder="Password" required>
+             <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+             <button type="submit" class="signup-btn">Sign Up</button>
+             <h6>Already have account?<a id="loginpage" href="#login">Login</a></h6>
+            </form>
+        </div>
+        </div>
+        <div class="login" id="login">
+        <div class="login-container">
+            <h2>Welcome back</h2>
+            <form action="signup_process.php" method="POST">
+             <input type="text" name="username" placeholder="Username" required>
+             <input type="password" name="password" placeholder="Password" required>
+             <button type="submit" class="login-btn">Login</button>
+             <h6>New user <a id="signuppage" href="#signup">Signup</a></h6>
+
+            </form>
+        </div>
+        </div>
       <div class="trusted">
         <h1 id="text">Trusted by Many Students</h1>
         <div class="brandbox">
@@ -73,7 +99,7 @@
             </div>
         </div>
       </div>
-    <div class="backcard">
+    <div class="backcard" id="feature">
       <div class="cardsec">
         <h2>Our Competitive Advantage</h2>
         <h6 id="h6">It functions as a comprehensive learning management system. It provide best resources for effective learning.</h6>
@@ -115,7 +141,7 @@
     <div>
         <h2 id="fixed">What other say about us</h2>
     </div>
-    <div class="testimonial">
+    <div class="testimonial" id="about">
         <div class="grid">
         <div class="test1 test">
             <div class="tell">
@@ -159,7 +185,7 @@
             <p>Sign up for our newsletter.</p>
             <div class="input">
                 <input type="email" placeholder="Email">
-                <button>Send</button>
+                <button id="news">Send</button>
             </div>
             <p>by signing up to our newsletter,you agree our <a href="#">terms of services </a>and <a href="#">privacy policy</a>.</p>
         </div>
@@ -168,12 +194,12 @@
     <footer class="footer">
         <div class="up">
             <div class="sync">
-                <a href="main.html">
+                <a href=index.html">
                     <span
                     class="material-symbols-outlined">
                     keyboard_command_key
                     </span>
-                    <h2>Study Sync</h2>
+                    <h2 #foot~>Study Sync</h2>
                 </a>
                 <p>Seamless learning for brighr future</p>
                 <ul class="social">
@@ -226,5 +252,6 @@
             <p>&copy; 2026 Study Sync. All rights reserved.</p>
         </div>
     </footer>
+    <script src="javascript.js"></script>
 </body>
 </html>
